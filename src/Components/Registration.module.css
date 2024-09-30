@@ -1,0 +1,50 @@
+
+  
+  .login_container {
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color:green;
+    text-align: center;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 400px;
+    height:fit-content;
+  }
+  
+  .registration_form {
+    width: 100%;
+  }
+  
+  .regi_form {
+    margin-bottom: 20px;
+  }
+  
+  .labe {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  .inpu {
+    width: calc(100% - 16px); /* Adjusted width to accommodate padding */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-sizing: border-box; /* Include padding and border in the width */
+  }
+  
+  .butto {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .butto:hover {
+    background-color: #0056b3;
+  }

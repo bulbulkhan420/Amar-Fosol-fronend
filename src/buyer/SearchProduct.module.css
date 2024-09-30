@@ -1,0 +1,89 @@
+.searchContainer {
+    margin: 20px;
+    text-align: center;
+}
+
+.searchForm {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.formGroup {
+    margin: 10px;
+}
+
+.label {
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+}
+
+.select,
+.input {
+    padding: 10px;
+    font-size: 1rem;
+    margin-top: 5px;
+    width: 250px;
+}
+
+.buttonContainer {
+    margin-top: 20px;
+}
+
+.searchButton {
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.searchButton:hover {
+    background-color: #45a049;
+}
+
+/* For the Product Cards */
+.cardContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 20px;
+}
+
+.card {
+    flex: 1 1 20%;
+    margin: 10px;
+    border: 1px solid #ddd;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Large screens (4 cards per row) */
+@media (min-width: 1024px) {
+    .card {
+        flex: 1 1 22%;
+        /* Adjusts to show 4 cards per row */
+    }
+}
+
+/* Medium screens (2 cards per row) */
+@media (min-width: 768px) and (max-width: 1023px) {
+    .card {
+        flex: 1 1 45%;
+        /* Adjusts to show 2 cards per row */
+    }
+}
+
+/* Small screens (1 card per row) */
+@media (max-width: 767px) {
+    .card {
+        flex: 1 1 90%;
+        /* Adjusts to show 1 card per row */
+    }
+}

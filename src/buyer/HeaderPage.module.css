@@ -1,0 +1,57 @@
+/* src/buyer/HeaderPage.module.css */
+:root {
+    --grass-green: #4CAF50;
+    --white: #ffffff;
+    --dark-gray: #333;
+}
+
+.header {
+    background-color: var(--grass-green);
+    color: var(--white);
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.titleContainer {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.mainTitle {
+    font-size: 3rem;
+    /* Enlarge font size */
+    font-weight: bold;
+    margin: 0;
+    color: var(--white);
+}
+
+.navLinks {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 1rem;
+}
+
+.link {
+    color: var(--white);
+    text-decoration: none;
+    font-size: 1.5rem;
+    /* Slightly enlarge the links as well */
+    font-weight: 500;
+}
+
+.link:hover {
+    text-decoration: underline;
+}
+
+body {
+    margin-top: 150px;
+    /* To avoid content overlap with fixed header */
+}

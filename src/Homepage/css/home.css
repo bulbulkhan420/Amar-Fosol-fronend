@@ -1,0 +1,20 @@
+
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+.parent{
+    background: url('../picture/back.jpg') fixed ;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+.parent marquee{
+    color: whitesmoke;
+    background-color: #333;
+    padding: 5px;
+    transition: 1s;
+    list-style: 40px;
+    margin-top: 30vh;
+}

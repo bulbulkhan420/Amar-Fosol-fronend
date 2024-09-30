@@ -1,17 +1,34 @@
 import React, { useState } from 'react';
 import styles from './ResetPassword.module.css'; // Importing the CSS module for reset password styling
-
+import { useNavigate, useParams } from 'react-router-dom';
+import axios from 'axios';
+import url from '../Backendurl'
 const ResetPassword = () => {
+  let {name,email}=useParams();
   const [newPassword, setNewPassword] = useState('');
   const [confirmPassword, setConfirmPassword] = useState('');
-
+  const navigate=useNavigate();
   const handleSubmit = (e) => {
     e.preventDefault();
     if (newPassword === confirmPassword) {
-      // Logic to handle password reset (e.g., API call)
-      alert('Password reset successfully!');
-    } else {
-      alert('Passwords do not match!');
+      axios.post(`${url}/newpassword`,{
+        name,
+        email,
+        password:newPassword
+      })
+      .then((res)=>{
+        if(res.data.ok){
+          alert("Updated");
+          navigate(`/login/${name}`);
+        }
+        else{
+          alert("Some thing error");
+        }
+      })
+      
+    } 
+    else{
+      alert('password does not match');
     }
   };
 

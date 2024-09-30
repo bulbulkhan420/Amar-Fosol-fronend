@@ -63,6 +63,7 @@
     background-color: var(--grass-green);
     color: var(--white);
     border: none;
+    width: 106%;
     padding: 0.75rem;
     border-radius: 5px;
     font-size: 1rem;

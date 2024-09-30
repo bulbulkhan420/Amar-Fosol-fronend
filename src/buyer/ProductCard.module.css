@@ -1,0 +1,105 @@
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid #ddd;
+    border-radius: 15px;
+    padding: 1.5rem;
+    margin: 1rem;
+    background-color: #fff;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    width: 400px;
+    /* Increased width from 300px to 400px */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.imageContainer {
+    width: 100%;
+    height: 250px;
+    /* Increased height for a bigger image */
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.card:hover .image {
+    transform: scale(1.1);
+}
+
+.productName {
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: #333;
+    margin: 1rem 0;
+    text-align: center;
+}
+
+.details {
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.price {
+    font-size: 1.25rem;
+    color: #4CAF50;
+    font-weight: 500;
+}
+
+.phoneNumber,
+.minAmount {
+    font-size: 1.1rem;
+    color: #666;
+}
+
+.payNowButton {
+    background-color: #4CAF50;
+    /* Grass-like green */
+    color: white;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 1rem;
+}
+
+.payNowButton:hover {
+    background-color: #388e3c;
+    /* Darker green on hover */
+}
+
+@media (max-width: 768px) {
+    .card {
+        width: 100%;
+        /* Full width on smaller screens */
+        margin: 1rem 0;
+    }
+
+    .imageContainer {
+        height: 200px;
+        /* Adjusted for smaller screens */
+    }
+
+    .productName {
+        font-size: 1.4rem;
+    }
+
+    .price,
+    .phoneNumber,
+    .minAmount,
+    .payNowButton {
+        font-size: 1rem;
+    }
+}
